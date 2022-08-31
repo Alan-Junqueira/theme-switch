@@ -1,0 +1,181 @@
+:root {
+  --dark: hsl(225, 13%, 18%);
+  --light: hsl(0, 0%, 95%);
+  --label: hsl(0, 0%, 0%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--light);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+input,
+button {
+  outline: none;
+  border: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.container label {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+
+  width: 23.538rem;
+  height: 10.2rem;
+
+  border-radius: 5.9rem;
+
+  background-color: var(--label);
+}
+
+.container label img {
+  width: 9.415rem;
+  height: 9.415rem;
+
+  padding-top: 1rem;
+}
+
+.container label div {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 8.631rem;
+  height: 8.631rem;
+  top: 0.8rem;
+  left: 1rem;
+
+  border-radius: 50%;
+  background-color: var(--light);
+}
+
+/*=========================SWITCH=========================*/
+.darkThemeSwitcher {
+  animation: darkThemeSwitcher 0.5s forwards;
+}
+
+@keyframes darkThemeSwitcher {
+  to {
+    left: 13.9rem;
+  }
+}
+
+.darkThemeSwitcherSmallScreen {
+  animation: darkThemeSwitcherSmallScreen 0.5s forwards;
+}
+
+@keyframes darkThemeSwitcherSmallScreen {
+  to {
+    left: 12.5rem;
+  }
+}
+
+.darkThemeSwitcherVerySmallScreen {
+  animation: darkThemeSwitcherVerySmallScreen 0.5s forwards;
+}
+
+@keyframes darkThemeSwitcherVerySmallScreen {
+  to {
+    left: 9.5rem;
+  }
+}
+
+.lightThemeSwitcher {
+  animation: lightThemeSwitcher 0.5s forwards;
+}
+
+@keyframes lightThemeSwitcher {
+  from {
+    left: 13.9rem;
+  }
+  to {
+    left: 1rem;
+  }
+}
+
+.lightThemeSwitcherSmallScreen {
+  animation: lightThemeSwitcherSmallScreen 0.5s forwards;
+}
+
+@keyframes lightThemeSwitcherSmallScreen {
+  from {
+    left: 12.5rem;
+  }
+  to {
+    left: 1rem;
+  }
+}
+
+.lightThemeSwitcherVerySmallScreen {
+  animation: lightThemeSwitcherVerySmallScreen 0.5s forwards;
+}
+
+@keyframes lightThemeSwitcherVerySmallScreen {
+  from {
+    left: 9.5rem;
+  }
+  to {
+    left: 1rem;
+  }
+}
+/*==============================BACKGROUND======================*/
+
+.darkThemeBg {
+  background: var(--dark);
+  opacity: 0;
+  animation: darkThemeBackground 0.5s forwards;
+}
+
+@keyframes darkThemeBackground {
+  to {
+    opacity: 1;
+    transform: initial;
+  }
+}
+
+.lightThemeBg {
+  background: var(--light);
+  opacity: 0;
+  animation: lightThemeBackground 0.5s forwards;
+}
+
+@keyframes lightThemeBackground {
+  to {
+    opacity: 1;
+    transform: initial;
+  }
+}
