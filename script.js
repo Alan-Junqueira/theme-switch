@@ -27,7 +27,7 @@ const switchTheme = () => {
           circleSwitch.classList.add('lightThemeSwitcher');
           circleSwitch.classList.remove('darkThemeSwitcher');
         }
-      } else if (screen.availWidth === 768) {
+      } else if (screen.availWidth <= 768) {
         if (event.clientX < 350) {
           circleSwitch.classList.add('darkThemeSwitcher');
           circleSwitch.classList.remove('lightThemeSwitcher');
@@ -35,7 +35,7 @@ const switchTheme = () => {
           circleSwitch.classList.add('lightThemeSwitcher');
           circleSwitch.classList.remove('darkThemeSwitcher');
         }
-      } else if (screen.availWidth === 425) {
+      } else if (screen.availWidth <= 425) {
         if (event.clientX < 175) {
           circleSwitch.classList.add('darkThemeSwitcher');
           circleSwitch.classList.remove('lightThemeSwitcher');
@@ -43,7 +43,7 @@ const switchTheme = () => {
           circleSwitch.classList.add('lightThemeSwitcher');
           circleSwitch.classList.remove('darkThemeSwitcher');
         }
-      } else if (screen.availWidth === 375) {
+      } else if (screen.availWidth <= 375) {
         if (event.clientX < 165) {
           circleSwitch.classList.add('darkThemeSwitcherSmallScreen');
           circleSwitch.classList.remove('lightThemeSwitcherSmallScreen');
@@ -51,7 +51,7 @@ const switchTheme = () => {
           circleSwitch.classList.add('lightThemeSwitcherSmallScreen');
           circleSwitch.classList.remove('darkThemeSwitcherSmallScreen');
         }
-      } else if (screen.availWidth === 320) {
+      } else if (screen.availWidth <= 320) {
         if (event.clientX < 155) {
           circleSwitch.classList.add('darkThemeSwitcherVerySmallScreen');
           circleSwitch.classList.remove('lightThemeSwitcherVerySmallScreen');
