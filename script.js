@@ -27,7 +27,7 @@ const switchTheme = () => {
           circleSwitch.classList.add('lightThemeSwitcher');
           circleSwitch.classList.remove('darkThemeSwitcher');
         }
-      } else if (screen.availWidth <= 768) {
+      } else if (screen.availWidth === 768) {
         if (event.clientX < 350) {
           circleSwitch.classList.add('darkThemeSwitcher');
           circleSwitch.classList.remove('lightThemeSwitcher');
@@ -36,7 +36,7 @@ const switchTheme = () => {
           circleSwitch.classList.remove('darkThemeSwitcher');
         }
       } else if (screen.availWidth <= 425) {
-        if (event.clientX < 175) {
+        if (event.clientX < 170) {
           circleSwitch.classList.add('darkThemeSwitcher');
           circleSwitch.classList.remove('lightThemeSwitcher');
         } else {
