@@ -3,6 +3,7 @@ A toggle to switch between dark and light theme.
 
 - Comments about the challenge:
 In this challenge, it was proposed to make a toggle to switch between dark and light theme.
+Responsive from 1440px to 425px, 375px && 320px supported.
 
 - Languages:
 Html
